@@ -1,0 +1,65 @@
+{
+  "matchDetails": {
+    "match": "India vs Australia",
+    "venue": "Wankhede Stadium",
+    "overs": 20,
+    "team1": {
+      "name": "India",
+      "score": 178,
+      "wickets": 5
+    },
+    "team2": {
+      "name": "Australia",
+      "score": 150,
+      "wickets": 7
+    }
+  },
+
+  "teamPlayers": {
+    "team": "India",
+    "players": [
+      {
+        "name": "Rohit Sharma",
+        "runs": 65,
+        "balls": 40
+      },
+      {
+        "name": "Virat Kohli",
+        "runs": 52,
+        "balls": 36
+      },
+      {
+        "name": "Hardik Pandya",
+        "runs": 30,
+        "balls": 18
+      }
+    ]
+  },
+
+  "scoreboard": {
+    "date": "04-04-2026",
+    "teams": [
+      {
+        "name": "India",
+        "score": "178/5",
+        "overs": "20"
+      },
+      {
+        "name": "Australia",
+        "score": "150/7",
+        "overs": "20"
+      }
+    ],
+    "topScorers": [
+      {
+        "player": "Rohit Sharma",
+        "runs": 65
+      },
+      {
+        "player": "Virat Kohli",
+        "runs": 52
+      }
+    ],
+    "result": "India won by 28 runs"
+  }
+}

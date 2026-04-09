@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Live News Headlines</title>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+background-color:#f2f2f2;
+text-align:center;
+}
+
+h1{
+background-color:#333;
+color:white;
+padding:15px;
+}
+
+#news{
+width:60%;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+.news{
+padding:10px;
+margin:10px;
+border-bottom:1px solid gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Live News Headlines</h1>
+
+<div id="news"></div>
+
+<script>
+
+axios.get("https://jsonplaceholder.typicode.com/posts")
+
+.then(function(response){
+
+let data = response.data
+
+let output = ""
+
+for(let i=0;i<10;i++)
+{
+
+output += "<div class='news'>"
+output += "<h3>"+data[i].title+"</h3>"
+output += "<p>"+data[i].body+"</p>"
+output += "</div>"
+
+}
+
+document.getElementById("news").innerHTML = output
+
+})
+
+.catch(function(error){
+
+console.log(error)
+
+})
+
+</script>
+
+</body>
+</html>
